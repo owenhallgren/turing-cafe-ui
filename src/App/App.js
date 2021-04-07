@@ -27,9 +27,9 @@ class App extends Component {
         <div className='resy-form'>
 
         </div>
-        <div className='resy-container'>
+        {this.state.reservations.length && <div className='resy-container'>
           <ResDisplay reservations={this.state.reservations}/>
-        </div>
+        </div>}
       </div>
     )
   }

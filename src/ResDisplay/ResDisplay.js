@@ -1,9 +1,10 @@
+import React from 'react';
 import './ResDisplay.css'
 import Reservation from '../Reservation/Reservation'
-import React from 'react';
 
 const ResDisplay = ( { reservations } ) => {
-    reservations.map(reservation => {
+
+    const resToShow = reservations.map(reservation => {
         return (
             <Reservation 
                 date={reservation.date}
@@ -14,7 +15,11 @@ const ResDisplay = ( { reservations } ) => {
                 />
         )
     })
-    
+    return (
+        <>
+            {resToShow}
+        </>
+    )
 }
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Reservation.css'
 const Reservation = ({ date, id, name, number, time}) => {
 
     return (
@@ -12,4 +12,4 @@ const Reservation = ({ date, id, name, number, time}) => {
     )
 }
 
-export default Reservation;
+export default Reservation
