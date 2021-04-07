@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { resFetch } from '../apiCall';
+import ResDisplay from '../ResDisplay/ResDisplay';
+
+
 
 class App extends Component {
   constructor() {
@@ -25,7 +28,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-          
+          <ResDisplay reservations={this.state.reservations}/>
         </div>
       </div>
     )
