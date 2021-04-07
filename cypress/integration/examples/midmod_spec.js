@@ -14,6 +14,9 @@ describe('home page', () => {
       cy
       .get('.res-card').first()
       .get('h4').contains('Christie')
+      .get('p').contains('12/29')
+      .get('p').contains('7:00 PM')
+      .get('p').contains('Number of guests:12')
   })
 
   it('Should update form as typing', () => {
@@ -39,6 +42,8 @@ describe('home page', () => {
       .get('button').click()
       .get('.res-card').last()
       .get('h4').contains('Owen')
-      
+      .get('p').contains('12/20')
+      .get('p').contains('4:00 PM')
+      .get('p').contains('Number of guests:5')
   })
 })
