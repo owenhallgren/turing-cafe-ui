@@ -16,9 +16,9 @@ const ResDisplay = ( { reservations } ) => {
         )
     })
     return (
-        <>
+        <div className='res-display'>
             {resToShow}
-        </>
+        </div>
     )
 }
 
