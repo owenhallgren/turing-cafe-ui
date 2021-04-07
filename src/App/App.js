@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
+import { resFetch } from '../apiCall';
 
 class App extends Component {
+  constructor() {
+    super() 
+    this.state = {
+      reservations: []
+    }
+  }
+
+  componentDidMount() {
+     resFetch().then(data => this.setState({ reservations: data }))
+  }
+   
+      
+  
+
   render() {
     return (
       <div className="App">
