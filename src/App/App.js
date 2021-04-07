@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       reservations: []
     }
+    this.addRes = this.addRes.bind(this);
   }
 
   componentDidMount() {

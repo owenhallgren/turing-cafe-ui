@@ -8,7 +8,6 @@ const ResDisplay = ( { reservations } ) => {
         return (
             <Reservation 
                 date={reservation.date}
-                id={reservation.id}
                 name={reservation.name}
                 number={reservation.number}
                 time={reservation.time}

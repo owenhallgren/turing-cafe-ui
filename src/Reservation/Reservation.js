@@ -1,6 +1,6 @@
 import React from 'react';
 import './Reservation.css'
-const Reservation = ({ date, id, name, number, time}) => {
+const Reservation = ({ date, name, number, time}) => {
 
     return (
         <div className='res-card'>
